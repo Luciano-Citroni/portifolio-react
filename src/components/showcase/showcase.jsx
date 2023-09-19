@@ -17,9 +17,9 @@ export const Showcase = () =>{
 		>
 			<FlexContainer align="center" fullWidthChild>
 				<div>
-					<Heading as="h4" size="h4" align="start" >Hello!</Heading>
+					<Heading as="h4" size="h4" align="start" >Olá!</Heading>
 					<Heading as="h2" size="h2" top="0.5rem" bottom="1rem" align="start">
-                        Olá, me chamo <BlueText>Luciano Citroni</BlueText>
+                        Me chamo <BlueText>Luciano Citroni</BlueText>
 					</Heading>
 
 					<Heading as="h3" size="h3" align="start">
@@ -48,7 +48,7 @@ export const Showcase = () =>{
 				<FlexContainer justify="flex-end">
 					<ShowcaseParticleContainer>
 						<ShowcaseImageCard>
-							<img src={ShowcaseImage} alt='showcase' />
+							<img src={ShowcaseImage} alt='showcase'/>
 						</ShowcaseImageCard>
 
 
