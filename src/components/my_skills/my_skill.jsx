@@ -23,12 +23,18 @@ export const MySkills = () =>{
 			id='Skills'
 			top="10%"
 			bottom="10%"
+			responsiveleft='1rem'
+			responsiveright='1rem'
 		>
 			{/* --left-section */}
-			<FlexContainer fullWidthChild>
-				<SkillCardContainer>
+			<FlexContainer 
+				responsivedirection='column-reverse'
+				responsiveflex 
+				fullwidthchild 
+			>
+				<SkillCardContainer id='container-skills'>
 					{skills.map((skill)=> (
-						<SkillCard>
+						<SkillCard key={skill.id}>
 							<IconContainer size='5rem' color='blue'>
 								{skill.icon}
 							</IconContainer>

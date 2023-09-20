@@ -7,7 +7,7 @@ export const NavbarContainer = styled.div`
     left:0;
     z-index: 10;
     transition: all 0.3s ease-in;
-    background-color:${({ bgColor }) => bgColor};
+    background-color:${({ bgcolor }) => bgcolor};
 `;
 
 

@@ -14,8 +14,12 @@ export const Showcase = () =>{
 			right="10%"
 			top="15%"
 			bottom="10%"
+			responsiveleft='1rem'
+			responsiveright='1rem'
+			responsivetop='8rem'
+
 		>
-			<FlexContainer align="center" fullWidthChild>
+			<FlexContainer align="center" fullwidthchild>
 				<div>
 					<Heading as="h4" size="h4" align="start" >Olá!</Heading>
 					<Heading as="h2" size="h2" top="0.5rem" bottom="1rem" align="start">
@@ -32,7 +36,7 @@ export const Showcase = () =>{
 
 					{/* icons */}
 
-					<FlexContainer gap="15px">
+					<FlexContainer gap="15px" responsiveflex>
 						<IconContainer color="white" size="1.5rem">
 							<BsLinkedin />
 						</IconContainer>

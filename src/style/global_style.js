@@ -32,6 +32,13 @@ export const PaddingContainer = styled.div`
     padding-left: ${({left})=> left};
     padding-right: ${({right})=> right};
 
+    @media(max-width: ${({ theme })=> theme.breakpoints.mobile}){
+        padding-top: ${({responsivetop})=> responsivetop};
+        padding-bottom: ${({responsiveBottom})=> responsiveBottom};
+        padding-left: ${({responsiveleft})=> responsiveleft};
+        padding-right: ${({responsiveright})=> responsiveright};
+
+    }
 `;
 
 
@@ -43,7 +50,13 @@ export const FlexContainer = styled.div`
     flex-direction: ${({direction})=> direction};
 
     & > div{
-        flex: ${({fullWidthChild}) => fullWidthChild && 1};
+        flex: ${({fullwidthchild}) => fullwidthchild && 1};
+    }
+
+    @media(max-width: ${({ theme })=> theme.breakpoints.mobile}){
+        display: ${({ responsiveflex }) => responsiveflex ? 'flex': 'block' };
+
+        flex-direction: ${({ responsivedirection }) => responsivedirection};
     }
 `;
 
@@ -67,6 +80,23 @@ export const Heading = styled(PaddingContainer)`
 		}
 	}};
 
+    @media(max-width: ${({ theme })=> theme.breakpoints.mobile}){
+        font-size: ${({size}) => {
+		switch(size){
+		case 'h1': 
+			return '2.5rem';
+		case 'h2': 
+			return '2rem';
+		case 'h3': 
+			return '1.5rem';
+		case 'h4': 
+			return '1rem';
+		default:
+			return;
+		}
+	}};
+
+    }
 `;
 
 export const BlueText = styled.span`

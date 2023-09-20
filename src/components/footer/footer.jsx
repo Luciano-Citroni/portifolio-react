@@ -37,7 +37,7 @@ export const Footer = () =>{
 							<FormInput as="textarea" placeholder='Coloque seu nome aqui'/>
 						</PaddingContainer>
 
-						<FlexContainer justify="center">
+						<FlexContainer justify="center" responsiveflex>
 							<Button>Enviar</Button>
 						</FlexContainer>
 					</ContactForm>
